@@ -4,6 +4,6 @@ const submitButton = document.querySelector('#submit');
 const contactForm = document.querySelector('.contactForm');
 
 contactForm.addEventListener('keyup', (e) => {
-  submitButton.disabled = nameInput.value || emailInput.value ? false : true;
+  submitButton.disabled = nameInput.value && emailInput.value ? false : true;
 });
 
