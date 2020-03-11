@@ -2,11 +2,10 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 const env = require('dotenv');
-const app = express();
 
 const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
 
 const { NEWS_URL, API_KEY } = process.env;
 const newsUrl = `${NEWS_URL}?country=gb&apiKey=${API_KEY}`;
