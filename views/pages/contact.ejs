@@ -10,19 +10,20 @@
               <h1>Contact</h1>
               <p>Please enter your details:</p>
 
-            <form method='post' action='/contact-result'>
+            <form method='post' action='/contact-result' class='contactForm'>
 
               <section class="form-group">
                 <label for="email">Name</label>
-                <input type="text" name="name" class="form-control form-control-lg" value="">
-              </section>
-              <section class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" class="form-control form-control-lg" value="">
+                <input type="text" name="name" id="name" class="form-control form-control-lg" value="">
               </section>
 
               <section class="form-group">
-                  <input type="submit" value="Submit" class="btn btn-success btn-block">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control form-control-lg" value="">
+              </section>
+
+              <section class="form-group">
+                  <input type="submit" value="Submit" id="submit" class="btn btn-success btn-block" disabled>
               </section>
 
             </form>
@@ -38,5 +39,7 @@
       </div>
   </div>
 </main>
+
+<script src="contact-validation.js"></script>
 
 <%- include('../partials/footer'); %>
