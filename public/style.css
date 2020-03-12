@@ -44,3 +44,13 @@ body {
 .m-t-100 {
   margin-top: 100px;
 }
+
+#submit {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#submit:disabled {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
