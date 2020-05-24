@@ -20,6 +20,15 @@ body {
   -webkit-line-clamp: 3;
 }
 
+h5 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.card-text {
+  font-size: 0.875rem !important;
+}
+
 .width-225px {
   width: 225px;
 }

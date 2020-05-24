@@ -15,9 +15,9 @@ router.use(function setFileName (req, res, next) {
   next();
 });
 
-router.get('/', (req, res) => {
-  res.render('pages/index');
-});
+// router.get('/', (req, res) => {
+//   res.render('pages/index');
+// });
 
 router.get('/contact', (req, res) => {
     res.render('pages/contact');
@@ -26,6 +26,12 @@ router.get('/contact', (req, res) => {
 router.post('/contact-result', (req, res) => {
   const { name, email } = req.body;
   res.render('pages/contact-result', { name, email });
+});
+
+router.get('/', async (req, res) => {
+  const response = await fetch(newsUrl);
+  const result = await response.json();
+  res.render('pages/news', { articles: result.articles });
 });
 
 router.get('/news', async (req, res) => {

@@ -10,14 +10,11 @@
 
       <section class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item<%= locals.filename == '/' ? ' active' : '' ; %>">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item<%= locals.filename == '/news' || locals.filename == '/' ? ' active' : '' ; %>">
+            <a class="nav-link" href="/news">News</a>
           </li>
           <li class="nav-item<%= locals.filename == '/contact' ? ' active' : '' ; %>">
             <a class="nav-link" href="/contact">Contact</a>
-          </li>
-          <li class="nav-item<%= locals.filename == '/news' ? ' active' : '' ; %>">
-            <a class="nav-link" href="/news">News</a>
           </li>
         </ul>
       </section>
