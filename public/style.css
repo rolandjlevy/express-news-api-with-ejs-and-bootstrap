@@ -63,3 +63,7 @@ h5 {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
+
+.p-20 {
+  padding: 20px;
+}
