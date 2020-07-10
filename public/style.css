@@ -29,10 +29,6 @@ h5 {
   font-size: 0.875rem !important;
 }
 
-.width-225px {
-  width: 225px;
-}
-
 .card-shadow {
   box-shadow: 0 0 20px rgba(99, 99, 99, 0.3);
   transform: scale(1);
@@ -66,4 +62,32 @@ h5 {
 
 .p-20 {
   padding: 20px;
+}
+
+.card-width {
+  width: calc(20% - 20px);
+}
+
+@media (max-width: 1200px) { 
+  .card-width {
+    width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .card-width {
+    width: calc(33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-width {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 360px) { 
+  .card-width {
+    width: calc(100% - 20px);
+  }
 }
